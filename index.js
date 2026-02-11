@@ -4,6 +4,9 @@ const fruitsRoutes = require("./routes/fruits");
 const animalsRoutes = require("./routes/animals");
 const fruitsV2Routes = require("./routes/v2/fruits");
 const animalsV2Routes = require("./routes/v2/animals");
+const countriesRoutes = require("./routes/countries");
+const countriesV2Routes = require("./routes/v2/countries");
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -12,19 +15,53 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/v2/fruits", fruitsV2Routes);
 app.use("/api/v2/animals", animalsV2Routes);
+app.use("/api/v1/countries", countriesRoutes);
+app.use("/api/v2/countries", countriesV2Routes);
 
-// root
+
 app.get("/", (req, res) => {
   res.json({
-    message: "Multi-API Server 🚀",
-    version: "v1",
-    apis: ["/api/v1/fruits", "/api/v1/animals"]
+    name: "My Own Public API",
+    description: "Free public REST API for learning and testing frontend & backend projects",
+    baseUrl: "https://my-own-api-3gym.onrender.com",
+
+    versions: {
+      v1: {
+        purpose: "Structured responses with metadata (pagination, total count)",
+        format: "Object",
+        endpoints: {
+          fruits: "/api/v1/fruits",
+          animals: "/api/v1/animals",
+          countries: "/api/v1/countries"
+        }
+      },
+
+      v2: {
+        purpose: "Frontend-friendly array responses (JSONPlaceholder style)",
+        format: "Array",
+        endpoints: {
+          fruits: "/api/v2/fruits",
+          animals: "/api/v2/animals",
+          countries: "/api/v2/countries"
+        }
+      }
+    },
+
+    example: {
+      v1: "/api/v1/fruits?page=1&limit=10",
+      v2: "/api/v2/fruits"
+    },
+
+    author: "Suraj Pagi",
+    status: "Live 🚀"
   });
 });
 
+ 
 // redirect old routes
 app.get("/api/fruits", (req, res) => res.redirect("/api/v1/fruits"));
 app.get("/api/animals", (req, res) => res.redirect("/api/v1/animals"));
+
 
 // versioned routes
 app.use("/api/v1/fruits", fruitsRoutes);
