@@ -25,16 +25,21 @@ app.get("/", (req, res) => {
     description: "Free public REST API for learning and testing frontend & backend projects",
     baseUrl: "https://my-own-api-3gym.onrender.com",
 
+    Links: {
+      use:"React,js users should follow this links",
+      fruits:"https://my-own-api-3gym.onrender.com/api/v2/fruits",
+      animals:"https://my-own-api-3gym.onrender.com/api/v2/animals",
+      countries:"https://my-own-api-3gym.onrender.com/api/v2/countries"
+    },
+ 
+    links: {
+      use:"Real-world production applications that need pagination, filtering, scalability, and structured responses",
+      fruits:"https://my-own-api-3gym.onrender.com/api/v1/fruits",
+      animals:"https://my-own-api-3gym.onrender.com/api/v1/animals",
+      countries:"https://my-own-api-3gym.onrender.com/api/v1/countries"
+    },
     versions: {
-      v1: {
-        purpose: "Structured responses with metadata (pagination, total count)",
-        format: "Object",
-        endpoints: {
-          fruits: "/api/v1/fruits",
-          animals: "/api/v1/animals",
-          countries: "/api/v1/countries"
-        }
-      },
+
 
       v2: {
         purpose: "Frontend-friendly array responses (JSONPlaceholder style)",
@@ -46,13 +51,18 @@ app.get("/", (req, res) => {
         }
       }
     },
+    
+    v1: {
+        purpose: "Structured responses with metadata (pagination, total count)",
+        format: "Object",
+        endpoints: {
+          fruits: "/api/v1/fruits",
+          animals: "/api/v1/animals",
+          countries: "/api/v1/countries"
+        }
+      },
 
-    example: {
-      use:"React users should follow this links",
-      fruits:"https://my-own-api-3gym.onrender.com/api/v2/fruits",
-      animals:"https://my-own-api-3gym.onrender.com/api/v2/animals",
-      countries:"https://my-own-api-3gym.onrender.com/api/v2/countries"
-    },
+
 
     author: "Suraj Pagi",
     status: "Live 🚀"
