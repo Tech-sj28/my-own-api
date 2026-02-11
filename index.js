@@ -1,12 +1,12 @@
 const express = require("express");
-
+const cors = require("cors");
 const fruitsRoutes = require("./routes/fruits");
 const animalsRoutes = require("./routes/animals");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-
+app.use(cors());
 app.use(express.json());
 
 // root
