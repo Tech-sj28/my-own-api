@@ -48,8 +48,10 @@ app.get("/", (req, res) => {
     },
 
     example: {
-      v1: "/api/v1/fruits?page=1&limit=10",
-      v2: "/api/v2/fruits"
+      use:"React users should follow this links",
+      fruits:"https://my-own-api-3gym.onrender.com/api/v2/fruits",
+      animals:"https://my-own-api-3gym.onrender.com/api/v2/animals",
+      countries:"https://my-own-api-3gym.onrender.com/api/v2/countries"
     },
 
     author: "Suraj Pagi",
