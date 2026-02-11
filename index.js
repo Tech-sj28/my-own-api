@@ -67,6 +67,16 @@ app.get("/api/animals", (req, res) => res.redirect("/api/v1/animals"));
 app.use("/api/v1/fruits", fruitsRoutes);
 app.use("/api/v1/animals", animalsRoutes);
 
+
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    service: "My Own Public API",
+    time: new Date()
+  });
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
