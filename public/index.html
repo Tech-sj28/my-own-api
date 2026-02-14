@@ -1,257 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Own Public API - Free REST API for Learning</title>
-    <link href= "bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Own Public API - Free REST API for Learning</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">
-                <span class="brand-icon">{ }</span> API Playground
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <span class="brand-icon">{ }</span> API Playground
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#apis">APIs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 text-center">
+          <h1 class="hero-title">Free Public REST API</h1>
+          <p class="hero-subtitle">Ready-to-use data for your learning and testing projects</p>
+          <p class="hero-description">No API key required • Multiple resources • Perfect for frontend practice</p>
+          <div class="hero-buttons">
+            <a href="https://github.com/Tech-sj28" class="btn btn-primary btn-lg me-3">
+              <i class="fa-brands fa-github"></i>
+              GitHub
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#apis">APIs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About Me</a>
-                    </li>
-                </ul>
-            </div>
+            <a href="#apis" class="btn btn-outline-primary btn-lg">View APIs</a>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12 text-center">
-                    <h1 class="hero-title">Free Public REST API</h1>
-                    <p class="hero-subtitle">Ready-to-use data for your learning and testing projects</p>
-                    <p class="hero-description">No API key required • Multiple resources • Perfect for frontend practice</p>
-                    <div class="hero-buttons">
-                        <a href="https://github.com/Tech-sj28" class="btn btn-primary btn-lg me-3">
-                          <i class="fa-brands fa-github"></i>
-                              GitHub
-                        </a>
-                        <a href="#apis" class="btn btn-outline-primary btn-lg">View APIs</a>
-                    </div>
-                </div>
-            </div>
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-description">
+            Welcome to a free public REST API platform designed specifically for developers who are learning,
+            testing, or building frontend projects. Our API provides ready-to-use data across multiple resources
+            including fruits, animals, and countries.
+          </p>
         </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">About Us</h2>
-                    <p class="section-description">
-                        Welcome to a free public REST API platform designed specifically for developers who are learning, 
-                        testing, or building frontend projects. Our API provides ready-to-use data across multiple resources 
-                        including fruits, animals, and countries.
-                    </p>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🔓</div>
-                        <h4>No API Key Required</h4>
-                        <p>Start using the API immediately without any registration or authentication hassles.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🔢</div>
-                        <h4>Multiple Versions</h4>
-                        <p>Choose between v1 with metadata (pagination, counts) or v2 with simple array responses.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h4>Framework Friendly</h4>
-                        <p>Works perfectly with React, Vue, Angular, Vanilla JS, and any modern frontend framework.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🔍</div>
-                        <h4>Search & Filter</h4>
-                        <p>Built-in support for search, filtering, and pagination to practice real-world API scenarios.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🧪</div>
-                        <h4>Perfect for Learning</h4>
-                        <p>Ideal for frontend practice, API testing, college projects, and understanding REST principles.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🚀</div>
-                        <h4>Always Online</h4>
-                        <p>Hosted and publicly accessible 24/7 with reliable uptime for your development needs.</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">🔓</div>
+            <h4>No API Key Required</h4>
+            <p>Start using the API immediately without any registration or authentication hassles.</p>
+          </div>
         </div>
-    </section>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">🔢</div>
+            <h4>Multiple Versions</h4>
+            <p>Choose between v1 with metadata (pagination, counts) or v2 with simple array responses.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h4>Framework Friendly</h4>
+            <p>Works perfectly with React, Vue, Angular, Vanilla JS, and any modern frontend framework.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h4>Search & Filter</h4>
+            <p>Built-in support for search, filtering, and pagination to practice real-world API scenarios.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">🧪</div>
+            <h4>Perfect for Learning</h4>
+            <p>Ideal for frontend practice, API testing, college projects, and understanding REST principles.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h4>Always Online</h4>
+            <p>Hosted and publicly accessible 24/7 with reliable uptime for your development needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- APIs Section for v2 -->
-    <section id="apis" class="apis-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="section-title">Available APIs</h2>
-                    <p class="section-description">
-                       Choose from our collection of free, public REST APIs. Simple array responses, frontend-friendly and JSONPlaceholder style.
-                    </p>
-                </div>
+<!-- version selector  -->
+ <section id="apis" class="apis-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="section-title">Choose API Version</h2>
+        <p class="section-description">
+          Select the API version that suits your project. v1 provides structured responses with metadata, while v2 is a simple, frontend-friendly array.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- v1 Card -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex">
+        <div class="api-card flex-fill d-flex flex-column justify-content-between">
+          <div>
+            <div class="api-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>API v1</h3>
+            <p>
+              Structured responses with metadata including pagination and total count. Ideal for backend integration and detailed data handling.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <a href="#api1" class="btn btn-outline-primary">
+              Go to v1
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- v2 Card -->
+      <div class="col-lg-4 col-md-6 mb-4 d-flex">
+        <div class="api-card flex-fill d-flex flex-column justify-content-between">
+          <div>
+            <div class="api-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>API v2</h3>
+            <p>
+              Simple array responses, frontend-friendly (JSONPlaceholder style). Perfect for React, Vue, Angular, or quick testing.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center mt-3">
+            <a href="#api2" class="btn btn-outline-primary">
+              Go to v2
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- APIs Section for v2 -->
+  <section id="api2" class="apis-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-5">
+          <h2 class="section-title">Available APIs</h2>
+          <p class="section-description">
+            Choose from our collection of free, public REST APIs. Simple array responses, frontend-friendly and
+            JSONPlaceholder style.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="api-card">
+            <div class="api-icon"><i class="fa-solid fa-apple-whole"></i></div>
+            <h3>Fruits API</h3>
+            <p>Access a comprehensive database of fruits with nutritional information, colors, and classifications.</p>
+            <div class="api-versions">
+
+              <span class="version-badge">v2</span>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="api-card">
-                        <div class="api-icon"><i class="fa-solid fa-apple-whole"></i></div>
-                        <h3>Fruits API</h3>
-                        <p>Access a comprehensive database of fruits with nutritional information, colors, and classifications.</p>
-                        <div class="api-versions">
-                           
-                            <span class="version-badge">v2</span>
-                        </div>
-                        <a href="https://my-own-api-3gym.onrender.com/api/v2/fruits" target="_blank" class="btn btn-outline-primary mt-3">View Endpoint</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="api-card">
-                        <div class="api-icon"><i class="fa-solid fa-paw"></i></div>
-                        <h3>Animals API</h3>
-                        <p>Explore various animals with details about species, habitats, characteristics, and classifications.</p>
-                        <div class="api-versions">
-                         
-                            <span class="version-badge">v2</span>
-                        </div>
-                        <a href="https://my-own-api-3gym.onrender.com/api/v2/animals" target="_blank" class="btn btn-outline-primary mt-3">View Endpoint</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="api-card">
-                        <div class="api-icon"><i class="fa-solid fa-earth-europe"></i></div>
-                        <h3>Countries API</h3>
-                        <p>Get information about countries including capitals, populations, currencies, and geographic data.</p>
-                        <div class="api-versions">
-                       
-                            <span class="version-badge">v2</span>
-                        </div>
-                        <a href="https://my-own-api-3gym.onrender.com/api/v2/countries" target="_blank" class="btn btn-outline-primary mt-3">View Endpoint</a>
-                    </div>
-                </div>
+            <div class="d-flex gap-2 mt-3">
+              <a href="https://my-own-api-3gym.onrender.com/api/v2/fruits" target="_blank"
+                class="btn btn-outline-primary">
+                View API
+              </a>
+              <a href="https://my-own-api-3gym.onrender.com/api/v2/fruits" class="btn btn-outline-primary"
+                onclick="copyLink(event, this)">
+                Copy URL
+              </a>
+
+
+              <small class="copy-msg"
+                style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); color:green; margin-top:5px;">
+                Copied!
+              </small>
             </div>
-          <div class="row mt-4">
-                <div class="col-12 text-center">
-                    <div class="api-info-box">
-                        <h5>API Format Examples</h5>
-                        <div class="row mt-3 justify-content-center">
-                            
-                            <div class="col-md-6 col-lg-4">
-                              
-                                <div class="code-example">
-                                    <small class="text-muted">v2 - Simple Array</small>
-                                    <pre><code>[
-  {...},
-  {...},
-  {...}
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="api-card">
+            <div class="api-icon"><i class="fa-solid fa-paw"></i></div>
+            <h3>Animals API</h3>
+            <p>Explore various animals with details about species, habitats, characteristics, and classifications.</p>
+            <div class="api-versions">
+
+              <span class="version-badge">v2</span>
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+              <a href="https://my-own-api-3gym.onrender.com/api/v2/animals" target="_blank"
+                class="btn btn-outline-primary">
+                View API
+              </a>
+              <a href="https://my-own-api-3gym.onrender.com/api/v2/animals" class="btn btn-outline-primary"
+                onclick="copyLink(event, this)">
+                Copy URL
+              </a>
+
+
+              <small class="copy-msg"
+                style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); color:green; margin-top:5px;">
+                Copied!
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="api-card">
+            <div class="api-icon"><i class="fa-solid fa-earth-europe"></i></div>
+            <h3>Countries API</h3>
+            <p>Get information about countries including capitals, populations, currencies, and geographic data.</p>
+            <div class="api-versions">
+
+              <span class="version-badge">v2</span>
+            </div>
+
+            <div class="d-flex gap-2 mt-3">
+              <a href="https://my-own-api-3gym.onrender.com/api/v2/countries" target="_blank"
+                class="btn btn-outline-primary">
+                View API
+              </a>
+              <a href="https://my-own-api-3gym.onrender.com/api/v2/countries" class="btn btn-outline-primary"
+                onclick="copyLink(event, this)">
+                Copy URL
+              </a>
+
+
+              <small class="copy-msg"
+                style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); color:green; margin-top:5px;">
+                Copied!
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <div class="api-info-box">
+            <h5>API Format Examples</h5>
+            <div class="row mt-3 justify-content-center">
+
+              <div class="col-md-6 col-lg-4">
+
+                <div class="code-example">
+                  <small class="text-muted">v2 - Simple Array</small>
+                  <pre><code>[
+ {
+    "id": 1,
+    "property1": "...",
+    "property2": "..."
+  }
 ]</code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- APIs Section for v1 -->
+  <section id="api1"  class="apis-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-5">
+          <h2 class="section-title">Available APIs</h2>
+          <p class="section-description">
+            Choose from our collection of free, public REST APIs. Structured responses with metadata, pagination, and
+            total count.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="api-card">
+            <div class="api-icon"><i class="fa-solid fa-apple-whole"></i></div>
+            <h3>Fruits API</h3>
+            <p>Access a comprehensive database of fruits with nutritional information, colors, and classifications.</p>
+            <div class="api-versions">
+
+              <span class="version-badge">v1</span>
+            </div class="d-flex gap-2 mt-3">
+            <div class="d-flex gap-2 mt-3">
+              <a href="https://my-own-api-3gym.onrender.com/api/v1/fruits" target="_blank"
+                class="btn btn-outline-primary">
+                View API
+              </a>
+              <a href="https://my-own-api-3gym.onrender.com/api/v1/fruits" class="btn btn-outline-primary"
+                onclick="copyLink(event, this)">
+                Copy URL
+              </a>
 
 
-
-        <!-- APIs Section for v1 -->
-   <section id="apis" class="apis-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5">
-                    <h2 class="section-title">Available APIs</h2>
-                    <p class="section-description">
-                          Choose from our collection of free, public REST APIs. Structured responses with metadata, pagination, and total count.
-                      </p>
-                </div>
+              <small class="copy-msg"
+                style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); color:green; margin-top:5px;">
+                Copied!
+              </small>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="api-card">
-                        <div class="api-icon"><i class="fa-solid fa-apple-whole"></i></div>
-                        <h3>Fruits API</h3>
-                        <p>Access a comprehensive database of fruits with nutritional information, colors, and classifications.</p>
-                        <div class="api-versions">
-                           
-                            <span class="version-badge">v1</span>
-                        </div>
-                        <a href="https://my-own-api-3gym.onrender.com/api/v1/fruits" target="_blank" class="btn btn-outline-primary mt-3">View Endpoint</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="api-card">
-                        <div class="api-icon"><i class="fa-solid fa-paw"></i></div>
-                        <h3>Animals API</h3>
-                        <p>Explore various animals with details about species, habitats, characteristics, and classifications.</p>
-                        <div class="api-versions">
-                         
-                            <span class="version-badge">v1</span>
-                        </div>
-                        <a href="https://my-own-api-3gym.onrender.com/api/v1/animals" target="_blank" class="btn btn-outline-primary mt-3">View Endpoint</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="api-card">
-                        <div class="api-icon"><i class="fa-solid fa-earth-europe"></i></div>
-                        <h3>Countries API</h3>
-                        <p>Get information about countries including capitals, populations, currencies, and geographic data.</p>
-                        <div class="api-versions">
-                       
-                            <span class="version-badge">v1</span>
-                        </div>
-                        <a href="https://my-own-api-3gym.onrender.com/api/v1/countries" target="_blank" class="btn btn-outline-primary mt-3">View Endpoint</a>
-                    </div>
-                </div>
+
+          </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="api-card">
+            <div class="api-icon"><i class="fa-solid fa-paw"></i></div>
+            <h3>Animals API</h3>
+            <p>Explore various animals with details about species, habitats, characteristics, and classifications.</p>
+            <div class="api-versions">
+
+              <span class="version-badge">v1</span>
             </div>
-                     <div class="row mt-4">
-                <div class="col-12 text-center">
-                    <div class="api-info-box">
-                        <h5>API Format Examples</h5>
-                        <div class="row mt-3 justify-content-center">
-                            
-                            <div class="col-md-6 col-lg-4">
-                              
-                                <div class="code-example">
-                                    <small class="text-muted">v1 - Structured Response</small>
-                                    <pre><code>{
+            <div class="d-flex gap-2 mt-3">
+              <a href="https://my-own-api-3gym.onrender.com/api/v1/animals" target="_blank"
+                class="btn btn-outline-primary">
+                View API
+              </a>
+              <a href="https://my-own-api-3gym.onrender.com/api/v1/animals" class="btn btn-outline-primary"
+                onclick="copyLink(event, this)">
+                Copy URL
+              </a>
+
+
+              <small class="copy-msg"
+                style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); color:green; margin-top:5px;">
+                Copied!
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="api-card">
+            <div class="api-icon"><i class="fa-solid fa-earth-europe"></i></div>
+            <h3>Countries API</h3>
+            <p>Get information about countries including capitals, populations, currencies, and geographic data.</p>
+            <div class="api-versions">
+
+              <span class="version-badge">v1</span>
+            </div>
+            <div class="d-flex gap-2 mt-3 ">
+              <a href="https://my-own-api-3gym.onrender.com/api/v1/countries" target="_blank"
+                class="btn btn-outline-primary">
+                View API
+              </a>
+              <a href="https://my-own-api-3gym.onrender.com/api/v1/countries" class="btn btn-outline-primary"
+                onclick="copyLink(event, this)">
+                Copy URL
+              </a>
+
+
+              <small class="copy-msg"
+                style="display:none; position:absolute; top:100%; left:50%; transform:translateX(-50%); color:green; margin-top:5px;">
+                Copied!
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <div class="api-info-box">
+            <h5>API Format Examples</h5>
+            <div class="row mt-3 justify-content-center">
+
+              <div class="col-md-6 col-lg-4">
+
+                <div class="code-example">
+                  <small class="text-muted">v1 - Structured Response</small>
+                  <pre><code>{
   "data": [...],
   "pagination": {
     "total": 100,
@@ -259,113 +413,140 @@
     "limit": 10
   }
 }</code></pre>
-                                </div>
-                            </div>
- 
-                        </div>
-                    </div>
                 </div>
+              </div>
+
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-
-
-    <!-- About Me Section -->
-    <section id="about-me" class="about-me-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="profile-content">
-                        <div class="profile-avatar"><i class="fa-solid fa-laptop-code"></i></div>
-                        <h3 class="mt-4">Developer & Creator</h3>
-                        <p class="about-me-text">
-                            Hi! I'm a passionate developer who believes in making learning accessible to everyone. 
-                            I created this public API platform to help fellow developers practice their frontend skills 
-                            and understand REST API concepts without the hassle of authentication or complex setups.
-                        </p>
-                        <p class="about-me-text">
-                            Whether you're a student working on a college project, a self-taught developer building your 
-                            portfolio, or someone exploring API integration, this platform is built for you. 
-                            All resources are free, open, and designed to make your learning journey smoother.
-                        </p>
-                        <div class="social-links mt-4">
-                            <a href="https://github.com/Tech-sj28" class="social-link">
-                                <i class="fa-brands fa-github"></i>
-                                GitHub
-                            </a>
-                            <a href="#" class="social-link">
-                       <i class="fa-brands fa-linkedin"></i>
-                                LinkedIn
-                            </a>
-                            <a href="#" class="social-link">
-                               <i class="fa-solid fa-shield-cat"></i>
-                                Portfolio
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  <!-- About Me Section -->
+  <section id="about-me" class="about-me-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-title">About Me</h2>
+          <div class="profile-content">
+            <div class="profile-avatar"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3 class="mt-4">Developer & Creator</h3>
+            <p class="about-me-text">
+              Hi! I'm a passionate developer who believes in making learning accessible to everyone.
+              I created this public API platform to help fellow developers practice their frontend skills
+              and understand REST API concepts without the hassle of authentication or complex setups.
+            </p>
+            <p class="about-me-text">
+              Whether you're a student working on a college project, a self-taught developer building your
+              portfolio, or someone exploring API integration, this platform is built for you.
+              All resources are free, open, and designed to make your learning journey smoother.
+            </p>
+            <div class="social-links mt-4">
+              <a href="https://github.com/Tech-sj28" class="social-link">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+              </a>
+              <a href="#" class="social-link">
+                <i class="fa-solid fa-shield-cat"></i>
+                Portfolio
+              </a>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2026 MyAPI. Built with ❤️ for developers</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">
-                        <span class="status-indicator"></span>
-                        API Status: <strong>Live 🚀</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left side: Copyright -->
+      <div class="col-md-4 text-center text-md-start mb-2 mb-md-0">
+        <p class="mb-0">© 2026 MyAPI — Love ❤️ for devs, by a dev</p>
+      </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const offset = 80;
-                    const targetPosition = target.offsetTop - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+      <!-- Center: Queries / Email -->
+      <div class="col-md-4 text-center mb-2 mb-md-0">
+        <p class="mb-0">Queries: <a href="mailto:youremail@example.com">pagisuraj28@gmail.com</a></p>
+      </div>
 
-        // Active nav link on scroll
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
+      <!-- Right side: API Status -->
+      <div class="col-md-4 text-center text-md-end">
+        <p class="mb-0">
+          <span class="status-indicator"></span>
+          API Status: <strong>Live 🚀</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 100)) {
-                    current = section.getAttribute('id');
-                }
-            });
 
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 80;
+          const targetPosition = target.offsetTop - offset;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Active nav link on scroll
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 100)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+
+    function copyLink(event, element) {
+      event.preventDefault();
+
+      const url = element.getAttribute("href");
+      const message = element.parentElement.querySelector(".copy-msg");
+
+      navigator.clipboard.writeText(url).then(() => {
+        message.style.display = "block";
+
+        setTimeout(() => {
+          message.style.display = "none";
+        }, 1500);
+      });
+    }
+  </script>
 </body>
+
 </html>
