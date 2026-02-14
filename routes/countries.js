@@ -6,7 +6,7 @@ const router = express.Router();
 /* GET countries (v1) */
 router.get("/", (req, res) => {
   let result = [...countries];
-  const { continent, code, search, page = 1, limit = 50 } = req.query;
+  const { continent, code, search, page = 1, limit = 200 } = req.query;
 
   if (search) {
     const keyword = search.toLowerCase();
