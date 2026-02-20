@@ -1,0 +1,182 @@
+[
+    {
+      "id": 1,
+      "name": "Black T-Shirt",
+      "category": "T-Shirt",
+      "size": ["S", "M", "L", "XL"],
+      "color": "Black",
+      "price": 799,
+      "image": "/images/men/tshirt-black.jpg"
+    },
+    {
+      "id": 2,
+      "name": "White T-Shirt",
+      "category": "T-Shirt",
+      "size": ["S", "M", "L", "XL"],
+      "color": "White",
+      "price": 749,
+      "image": "/images/men/tshirt-white.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Blue Jeans",
+      "category": "Jeans",
+      "size": ["30", "32", "34", "36"],
+      "color": "Blue",
+      "price": 1999,
+      "image": "/images/men/jeans-blue.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Black Jeans",
+      "category": "Jeans",
+      "size": ["30", "32", "34", "36"],
+      "color": "Black",
+      "price": 1899,
+      "image": "/images/men/jeans-black.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Gray Hoodie",
+      "category": "Hoodie",
+      "size": ["M", "L", "XL"],
+      "color": "Gray",
+      "price": 2499,
+      "image": "/images/men/hoodie-gray.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Red Hoodie",
+      "category": "Hoodie",
+      "size": ["M", "L", "XL"],
+      "color": "Red",
+      "price": 2599,
+      "image": "/images/men/hoodie-red.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Formal White Shirt",
+      "category": "Shirt",
+      "size": ["M", "L", "XL"],
+      "color": "White",
+      "price": 1499,
+      "image": "/images/men/shirt-white.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Formal Blue Shirt",
+      "category": "Shirt",
+      "size": ["M", "L", "XL"],
+      "color": "Blue",
+      "price": 1599,
+      "image": "/images/men/shirt-blue.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Black Jacket",
+      "category": "Jacket",
+      "size": ["M", "L", "XL"],
+      "color": "Black",
+      "price": 3499,
+      "image": "/images/men/jacket-black.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Denim Jacket",
+      "category": "Jacket",
+      "size": ["M", "L", "XL"],
+      "color": "Blue",
+      "price": 3299,
+      "image": "/images/men/jacket-denim.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Track Pants",
+      "category": "Track Pant",
+      "size": ["M", "L", "XL"],
+      "color": "Black",
+      "price": 1299,
+      "image": "/images/men/trackpants-black.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Cargo Pants",
+      "category": "Cargo",
+      "size": ["30", "32", "34"],
+      "color": "Green",
+      "price": 2199,
+      "image": "/images/men/cargo-green.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Sweatshirt Navy",
+      "category": "Sweatshirt",
+      "size": ["M", "L", "XL"],
+      "color": "Navy",
+      "price": 1799,
+      "image": "/images/men/sweatshirt-navy.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Slim Fit Blazer",
+      "category": "Blazer",
+      "size": ["M", "L", "XL"],
+      "color": "Black",
+      "price": 4999,
+      "image": "/images/men/blazer-black.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Checked Shirt",
+      "category": "Shirt",
+      "size": ["M", "L", "XL"],
+      "color": "Red",
+      "price": 1399,
+      "image": "/images/men/shirt-checked.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Sports Shorts",
+      "category": "Shorts",
+      "size": ["M", "L", "XL"],
+      "color": "Black",
+      "price": 899,
+      "image": "/images/men/shorts-black.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Printed T-Shirt",
+      "category": "T-Shirt",
+      "size": ["S", "M", "L"],
+      "color": "Yellow",
+      "price": 999,
+      "image": "/images/men/tshirt-printed.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Winter Coat",
+      "category": "Coat",
+      "size": ["M", "L", "XL"],
+      "color": "Brown",
+      "price": 5999,
+      "image": "/images/men/coat-brown.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Casual Polo",
+      "category": "Polo",
+      "size": ["M", "L", "XL"],
+      "color": "Green",
+      "price": 1199,
+      "image": "/images/men/polo-green.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Formal Trouser",
+      "category": "Trouser",
+      "size": ["30", "32", "34", "36"],
+      "color": "Gray",
+      "price": 1899,
+      "image": "/images/men/trouser-gray.jpg"
+    }
+  ]
