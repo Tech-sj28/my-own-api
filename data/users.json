@@ -1,0 +1,212 @@
+[
+    {
+      "id": 1,
+      "name": "Amit Sharma",
+      "email": "amit.sharma@example.in",
+      "age": 30,
+      "address": { "street": "MG Road", "city": "Bangalore", "state": "Karnataka", "pincode": "560001" }
+    },
+    {
+      "id": 2,
+      "name": "Priya Nair",
+      "email": "priya.nair@example.in",
+      "age": 27,
+      "address": { "street": "Marine Drive", "city": "Mumbai", "state": "Maharashtra", "pincode": "400002" }
+    },
+    {
+      "id": 3,
+      "name": "Rajesh Gupta",
+      "email": "rajesh.gupta@example.in",
+      "age": 35,
+      "address": { "street": "Park Street", "city": "Kolkata", "state": "West Bengal", "pincode": "700016" }
+    },
+    {
+      "id": 4,
+      "name": "Ananya Iyer",
+      "email": "ananya.iyer@example.in",
+      "age": 24,
+      "address": { "street": "Anna Salai", "city": "Chennai", "state": "Tamil Nadu", "pincode": "600002" }
+    },
+    {
+      "id": 5,
+      "name": "Vikram Singh",
+      "email": "vikram.singh@example.in",
+      "age": 32,
+      "address": { "street": "Civil Lines", "city": "Jaipur", "state": "Rajasthan", "pincode": "302001" }
+    },
+    {
+      "id": 6,
+      "name": "Sonal Verma",
+      "email": "sonal.verma@example.in",
+      "age": 29,
+      "address": { "street": "Banjara Hills", "city": "Hyderabad", "state": "Telangana", "pincode": "500034" }
+    },
+    {
+      "id": 7,
+      "name": "Arjun Reddy",
+      "email": "arjun.reddy@example.in",
+      "age": 31,
+      "address": { "street": "Jubilee Hills", "city": "Hyderabad", "state": "Telangana", "pincode": "500033" }
+    },
+    {
+      "id": 8,
+      "name": "Meera Joshi",
+      "email": "meera.joshi@example.in",
+      "age": 26,
+      "address": { "street": "FC Road", "city": "Pune", "state": "Maharashtra", "pincode": "411004" }
+    },
+    {
+      "id": 9,
+      "name": "Karan Malhotra",
+      "email": "karan.malhotra@example.in",
+      "age": 33,
+      "address": { "street": "Connaught Place", "city": "New Delhi", "state": "Delhi", "pincode": "110001" }
+    },
+    {
+      "id": 10,
+      "name": "Ishani Das",
+      "email": "ishani.das@example.in",
+      "age": 28,
+      "address": { "street": "Salt Lake", "city": "Kolkata", "state": "West Bengal", "pincode": "700091" }
+    },
+    {
+      "id": 11,
+      "name": "Rohan Deshmukh",
+      "email": "rohan.deshmukh@example.in",
+      "age": 34,
+      "address": { "street": "Kothrud", "city": "Pune", "state": "Maharashtra", "pincode": "411038" }
+    },
+    {
+      "id": 12,
+      "name": "Sneha Kulkarni",
+      "email": "sneha.kulkarni@example.in",
+      "age": 25,
+      "address": { "street": "Indiranagar", "city": "Bangalore", "state": "Karnataka", "pincode": "560038" }
+    },
+    {
+      "id": 13,
+      "name": "Aditya Patil",
+      "email": "aditya.patil@example.in",
+      "age": 30,
+      "address": { "street": "Dadar West", "city": "Mumbai", "state": "Maharashtra", "pincode": "400028" }
+    },
+    {
+      "id": 14,
+      "name": "Kavita Rao",
+      "email": "kavita.rao@example.in",
+      "age": 29,
+      "address": { "street": "Malleshwaram", "city": "Bangalore", "state": "Karnataka", "pincode": "560003" }
+    },
+    {
+      "id": 15,
+      "name": "Deepak Choudhary",
+      "email": "deepak.c@example.in",
+      "age": 37,
+      "address": { "street": "Vaishali Nagar", "city": "Jaipur", "state": "Rajasthan", "pincode": "302021" }
+    },
+    {
+      "id": 16,
+      "name": "Tanvi Bhat",
+      "email": "tanvi.bhat@example.in",
+      "age": 23,
+      "address": { "street": "Panjim Market", "city": "Goa", "state": "Goa", "pincode": "403001" }
+    },
+    {
+      "id": 17,
+      "name": "Manish Pandey",
+      "email": "manish.p@example.in",
+      "age": 31,
+      "address": { "street": "Gomti Nagar", "city": "Lucknow", "state": "Uttar Pradesh", "pincode": "226010" }
+    },
+    {
+      "id": 18,
+      "name": "Shweta Tiwari",
+      "email": "shweta.t@example.in",
+      "age": 28,
+      "address": { "street": "Hazratganj", "city": "Lucknow", "state": "Uttar Pradesh", "pincode": "226001" }
+    },
+    {
+      "id": 19,
+      "name": "Varun Saxena",
+      "email": "varun.s@example.in",
+      "age": 34,
+      "address": { "street": "Arera Colony", "city": "Bhopal", "state": "Madhya Pradesh", "pincode": "462016" }
+    },
+    {
+      "id": 20,
+      "name": "Pooja Hegde",
+      "email": "pooja.h@example.in",
+      "age": 26,
+      "address": { "street": "Besant Nagar", "city": "Chennai", "state": "Tamil Nadu", "pincode": "600090" }
+    },
+    {
+      "id": 21,
+      "name": "Rahul Bose",
+      "email": "rahul.bose@example.in",
+      "age": 32,
+      "address": { "street": "Gariahat", "city": "Kolkata", "state": "West Bengal", "pincode": "700019" }
+    },
+    {
+      "id": 22,
+      "name": "Divya Menon",
+      "email": "divya.m@example.in",
+      "age": 27,
+      "address": { "street": "MG Road", "city": "Kochi", "state": "Kerala", "pincode": "682016" }
+    },
+    {
+      "id": 23,
+      "name": "Sandeep Gill",
+      "email": "sandeep.g@example.in",
+      "age": 36,
+      "address": { "street": "Sector 17", "city": "Chandigarh", "state": "Punjab", "pincode": "160017" }
+    },
+    {
+      "id": 24,
+      "name": "Neha Kapoor",
+      "email": "neha.k@example.in",
+      "age": 29,
+      "address": { "street": "Greater Kailash", "city": "New Delhi", "state": "Delhi", "pincode": "110048" }
+    },
+    {
+      "id": 25,
+      "name": "Abhishek Jha",
+      "email": "abhi.jha@example.in",
+      "age": 33,
+      "address": { "street": "Boring Road", "city": "Patna", "state": "Bihar", "pincode": "800001" }
+    },
+    {
+      "id": 26,
+      "name": "Ritu Phogat",
+      "email": "ritu.p@example.in",
+      "age": 25,
+      "address": { "street": "Model Town", "city": "Rohtak", "state": "Haryana", "pincode": "124001" }
+    },
+    {
+      "id": 27,
+      "name": "Sameer Khan",
+      "email": "sameer.k@example.in",
+      "age": 30,
+      "address": { "street": "Sayajigunj", "city": "Vadodara", "state": "Gujarat", "pincode": "390005" }
+    },
+    {
+      "id": 28,
+      "name": "Ayesha Takia",
+      "email": "ayesha.t@example.in",
+      "age": 31,
+      "address": { "street": "Prahlad Nagar", "city": "Ahmedabad", "state": "Gujarat", "pincode": "380015" }
+    },
+    {
+      "id": 29,
+      "name": "Gaurav Misra",
+      "email": "gaurav.m@example.in",
+      "age": 35,
+      "address": { "street": "Sigra", "city": "Varanasi", "state": "Uttar Pradesh", "pincode": "221010" }
+    },
+    {
+      "id": 30,
+      "name": "Preeti Desai",
+      "email": "preeti.d@example.in",
+      "age": 28,
+      "address": { "street": "Koramangala", "city": "Bangalore", "state": "Karnataka", "pincode": "560034" }
+    }
+  ]
