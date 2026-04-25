@@ -1,237 +1,159 @@
-# 🍎 Static Fruits API Documentation
-
-A **free, static, read-only REST API** built with **Node.js + Express**, inspired by **JSONPlaceholder**. This API is designed for **learning, frontend testing, and portfolio projects**.
+Here’s your updated README with the **“Coming Soon” section removed** and your **additional APIs + version details** clearly explained:
 
 ---
 
-## 📌 Overview
+🍎 Fruits API (Free & Static)
 
-* **Type**: Static REST API
-* **Authentication**: None
-* **Database**: None (JSON-based)
-* **Hosting**: Free-tier friendly
-* **Write Operations**: Fake (no data persistence)
+A simple, **read-only REST API** built using **Node.js + Express**, inspired by JSONPlaceholder.
+Perfect for **practice, frontend projects, and demos**.
 
 ---
 
-## 🌍 Base URL
+🌍 Live API
 
-```
-http://localhost:3000
-```
-
-(Will change after deployment)
+👉 [https://my-own-api-3gym.onrender.com/](https://my-own-api-3gym.onrender.com/)
 
 ---
 
-## 🔢 API Versioning
+📌 What This API Offers
 
-Current version:
+This project now includes multiple static APIs:
+
+* 🍎 Fruits API
+* 🐶 Animals API
+* 🌍 Countries API
+* 👕 Men Clothes API(with images)
+* 👤 Users API
+
+All APIs are **free, public, and require no authentication**.
+
+---
+⚙️ Base URL
 
 ```
-/api/v1
-```
-
-Backward compatibility:
-
-```
-/api/fruits  → redirects to /api/v1/fruits
+https://my-own-api-3gym.onrender.com/api
 ```
 
 ---
 
-## 📚 Endpoints
+🔢 API Versions
 
-### 1️⃣ Get All Fruits
+✅ API v1 (Detailed Responses)
+
+* Includes metadata like:
+
+  * total items
+  * pagination
+  * page info
+* Best for **backend integration** and structured apps
+
+**Example:**
+
+```
+/api/v1/fruits
+```
+
+---
+
+⚡ API v2 (Simple Responses)
+
+* Returns **plain arrays (JSONPlaceholder style)**
+* No metadata, cleaner responses
+* Best for **frontend apps (React, Vue, Angular)**
+
+**Example:**
+
+```
+/api/v2/fruits
+```
+
+---
+
+📚 Example Endpoints
+
+🍎 Get All Fruits
 
 ```
 GET /api/v1/fruits
-```
-
-#### Query Parameters (optional)
-
-| Parameter | Type   | Description                 |
-| --------- | ------ | --------------------------- |
-| `color`   | string | Filter by fruit color       |
-| `name`    | string | Filter by fruit name        |
-| `search`  | string | Search by name or color     |
-| `page`    | number | Page number (default: 1)    |
-| `limit`   | number | Items per page (default: 5) |
-
-#### Example Request
-
-```
-GET /api/v1/fruits?color=yellow&page=1&limit=2
-```
-
-#### Example Response
-
-```json
-{
-  "version": "v1",
-  "totalItems": 2,
-  "page": 1,
-  "limit": 2,
-  "totalPages": 1,
-  "data": [
-    {
-      "id": 2,
-      "name": "Banana",
-      "color": "Yellow",
-      "price": 60
-    }
-  ]
-}
+GET /api/v2/fruits
 ```
 
 ---
 
-### 2️⃣ Get Single Fruit
+🔍 Query Options (v1 only)
+
+| Param  | Example       | Description          |
+| ------ | ------------- | -------------------- |
+| color  | `?color=red`  | Filter by color      |
+| name   | `?name=apple` | Filter by name       |
+| search | `?search=ap`  | Search name or color |
+| page   | `?page=2`     | Page number          |
+| limit  | `?limit=5`    | Items per page       |
+
+---
+
+🍏 Get Single Item
 
 ```
 GET /api/v1/fruits/:id
-```
-
-#### Example Request
-
-```
-GET /api/v1/fruits/1
-```
-
-#### Example Response
-
-```json
-{
-  "version": "v1",
-  "data": {
-    "id": 1,
-    "name": "Apple",
-    "color": "Red",
-    "price": 120
-  }
-}
+GET /api/v2/fruits/:id
 ```
 
 ---
 
-## ✨ Fake Write Operations (JSONPlaceholder Style)
+👤 Users API
 
-> ⚠️ These endpoints **do not modify data**. They return fake success responses for frontend testing.
+Access a complete and reliable user dataset including:
 
----
+* Name
+* Email
+* Age
+* Full address
 
-### 3️⃣ Fake Create Fruit
+**Example:**
 
 ```
-POST /api/v1/fruits
-```
-
-#### Request Body
-
-```json
-{
-  "name": "Kiwi",
-  "color": "Green",
-  "price": 90
-}
-```
-
-#### Response
-
-```json
-{
-  "message": "Fruit created (fake)",
-  "version": "v1",
-  "data": {
-    "id": 999,
-    "name": "Kiwi",
-    "color": "Green",
-    "price": 90
-  }
-}
+GET /api/v1/users
+GET /api/v2/users
 ```
 
 ---
 
-### 4️⃣ Fake Update Fruit
+✨ Fake Write Endpoints (Testing Only)
+
+These endpoints **do NOT store data**.
+They return fake success responses for practice.
 
 ```
-PUT /api/v1/fruits/:id
-```
-
-#### Request Body
-
-```json
-{
-  "price": 100
-}
-```
-
-#### Response
-
-```json
-{
-  "message": "Fruit updated (fake)",
-  "version": "v1",
-  "data": {
-    "id": "1",
-    "price": 100
-  }
-}
+POST   /api/v1/:resource
+PUT    /api/v1/:resource/:id
+DELETE /api/v1/:resource/:id
 ```
 
 ---
 
-### 5️⃣ Fake Delete Fruit
+🚀 Why Use This API?
 
-```
-DELETE /api/v1/fruits/:id
-```
-
-#### Example Response
-
-```json
-{
-  "message": "Fruit deleted (fake)",
-  "version": "v1",
-  "id": "1"
-}
-```
+* Practice real-world API usage
+* Build frontend apps without backend
+* Use in portfolios & demos
+* Learn filtering, pagination & versioning
 
 ---
 
-## 🚀 Use Cases
+🧠 Key Features
 
-* Frontend development (React, Vue, Angular)
-* API learning & practice
-* Portfolio projects
-* Demo apps
-* Interview demonstrations
-
----
-
-## 🧠 Design Philosophy
-
-* **Static & safe** → no real data changes
-* **Free hosting friendly**
-* **Versioned API** for future upgrades
-* **JSONPlaceholder-style behavior**
+* ✅ Multiple APIs in one place
+* ✅ Two response formats (v1 & v2)
+* ✅ No authentication required
+* ✅ Beginner-friendly
+* ✅ Safe (no real data changes)
+* ✅ Free to use
 
 ---
 
-## 📈 Future Improvements
+👨‍💻 Author
 
-* API v2 with real database
-* Authentication (JWT / API keys)
-* Rate limiting
-* Swagger / OpenAPI docs
+Built for learning, testing, and showcasing API development skills.
 
----
-
-## 👨‍💻 Author
-
-Built for learning and demonstration purposes.
-
----
-
-✅ **This API is production-structured but learning-focused.**
+ 
