@@ -1,6 +1,4 @@
-Here’s your updated README with the **“Coming Soon” section removed** and your **additional APIs + version details** clearly explained:
 
----
 
 🍎 Fruits API (Free & Static)
 
